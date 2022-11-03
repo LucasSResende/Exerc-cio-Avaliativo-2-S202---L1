@@ -6,7 +6,7 @@ from helper.write_a_json import write_a_json as wj
 class TeacherCRUD():
 
     def __init__(self):
-        self.db = Graph(uri='bolt://54.152.81.182:7687', user='neo4j', password='acceptors-reports-supermarkets')
+        self.db = Graph(uri='bolt://1.2.3.4:5678', user='neo4j', password='pass-word-easy')
 
     def create(self, name, ano_nasc, cpf):
         return wj(self.db.execute_query('CREATE (p:Teacher {name:$name, ano_nasc:$ano_nasc, cpf:$cpf}) return p', {'name': name, 'ano_nasc': ano_nasc, 'cpf': cpf}), 'create')
