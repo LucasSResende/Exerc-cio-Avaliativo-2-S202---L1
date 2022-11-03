@@ -3,7 +3,7 @@ from db.database import Graph
 from helper.write_a_json import write_a_json as wj
 
 if __name__ == '__main__':
-    db = Graph(uri='bolt://54.152.81.182:7687', user='neo4j', password='acceptors-reports-supermarkets')
+    db = Graph(uri='bolt://1.2.3.4:5678', user='neo4j', password='pass-word-easy')
 
 
 
